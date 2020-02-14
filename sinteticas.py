@@ -1,6 +1,9 @@
 from PIL import Image
 import os
 
+INPUT_DIR = "input"
+OUTPUT_DIR = "output"
+
 # Vídeo:
 def triangulo(size):
     WHITE = (255, 255, 255)
@@ -48,7 +51,11 @@ def bandeira_japao(height):
 
 
 if __name__ == "__main__":
-    # teste = triangulo(700)
-    # teste = bandeira_franca(700)
+    teste = triangulo(700)
+    teste.save(os.path.join(OUTPUT_DIR, "triangulo.jpg"))
+    teste = bandeira_franca(700)
+    teste.save(os.path.join(OUTPUT_DIR, "bandeira_franca.jpg"))
     teste = bandeira_japao(700)
+    teste.save(os.path.join(OUTPUT_DIR, "bandeira_japao.jpg"))
+    print("Imagem salvas na pasta {}".format(OUTPUT_DIR))
     teste.show()
