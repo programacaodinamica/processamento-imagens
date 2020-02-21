@@ -2,7 +2,7 @@ from PIL import Image
 from utils import in_file, out_file
 
 
-# Escala de Cinza: https://youtu.be/HOuYlxqbq0Y
+# Escala de Cinza: https://youtu.be/_3VcRHwZpPU
 def media_grayscale(colored):
     w, h = colored.size
     img = Image.new("RGB", (w, h))
@@ -15,7 +15,7 @@ def media_grayscale(colored):
             img.putpixel((x,y), (lum, lum, lum))
     return img
 
-# Escala de Cinza: https://youtu.be/HOuYlxqbq0Y
+# Escala de Cinza: https://youtu.be/_3VcRHwZpPU
 def grayscale(colored):
     w, h = colored.size
     img = Image.new("RGB", (w, h))
