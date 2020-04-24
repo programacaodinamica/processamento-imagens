@@ -5,7 +5,8 @@ from utils import in_file, out_file
 # Escala de Cinza: https://youtu.be/_3VcRHwZpPU
 def media_grayscale(colored):
     w, h = colored.size
-    img = Image.new("RGB", (w, h))
+    #P (8-bit pixels, mapped to any other mode using a color palette)
+    img = Image.new("P", (w, h))
 
     for x in range(w):
         for y in range(h):
@@ -18,7 +19,8 @@ def media_grayscale(colored):
 # Escala de Cinza: https://youtu.be/_3VcRHwZpPU
 def grayscale(colored):
     w, h = colored.size
-    img = Image.new("RGB", (w, h))
+    # P (8-bit pixels, mapped to any other mode using a color palette)
+    img = Image.new("P", (w, h))
 
     for x in range(w):
         for y in range(h):
@@ -38,4 +40,3 @@ if __name__ == "__main__":
     baloes = Image.open(in_file("baloes.jpg"))
     pb_baloes = grayscale(baloes)
     pb_baloes.save(out_file("pb_baloes2.jpg"))
-    
