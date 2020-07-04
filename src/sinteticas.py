@@ -4,7 +4,7 @@ import os
 INPUT_DIR = "input"
 OUTPUT_DIR = "output"
 
-# IM02 Sintetizando Imagens https://youtu.be/kb8S06dpZiM
+# IMPC02 | Sintetizando Imagens: https://youtu.be/kb8S06dpZiM
 def triangulo(size):
     WHITE = (255, 255, 255)
     BLACK = (0, 0, 0)
@@ -17,7 +17,7 @@ def triangulo(size):
     
     return image
 
-# IM02 Sintetizando Imagens https://youtu.be/kb8S06dpZiM
+# IMPC02 | Sintetizando Imagens https://youtu.be/kb8S06dpZiM
 def bandeira_franca(height):
     WHITE = (255, 255, 255)
     BLUE = (0, 85, 164)
@@ -33,7 +33,7 @@ def bandeira_franca(height):
 
     return image
 
-# IM02 Sintetizando Imagens https://youtu.be/kb8S06dpZiM
+# IMPC02 | Sintetizando Imagens https://youtu.be/kb8S06dpZiM
 def bandeira_japao(height):
     WHITE = (255, 255, 255)
     RED = (173, 35, 51)

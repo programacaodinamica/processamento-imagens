@@ -30,12 +30,12 @@ def grayscale(colored):
             
 
 if __name__ == "__main__":
-    img = Image.open(in_file("baloes-pb.jpg"))
-    print(img.getpixel((100, 100)))
-    print(img.getpixel((500, 300)))
-    print(img.getpixel((300, 180)))
+    img = Image.open(in_file("baloes.jpg"))
+    # print(img.getpixel((100, 100)))
+    # print(img.getpixel((500, 300)))
+    # print(img.getpixel((300, 180)))
 
-    baloes = Image.open(in_file("baloes.jpg"))
-    pb_baloes = grayscale(baloes)
-    pb_baloes.save(out_file("pb_baloes2.jpg"))
+    # pb_baloes = grayscale(baloes)
+    # pb_baloes.save(out_file("pb_baloes2.jpg"))
+    grayscale(img).save(out_file("pb-baloes.jpg"))
     

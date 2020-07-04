@@ -1,11 +1,7 @@
 from PIL import Image
+from utils import in_file
 import os
 
-INPUT_DIR = "input"
-OUTPUT_DIR = "output"
-
-def in_file(filename):
-    return os.path.join(INPUT_DIR, filename)
 
 # abre a imagem
 image = Image.open(in_file("pensador.jpg"))
