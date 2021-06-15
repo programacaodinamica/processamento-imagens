@@ -10,8 +10,8 @@ def negative(img:Image)->Image:
 
     negated = Image.new(img.mode, img.size, "red")
     w, h = negated.size
-    for i in range(h):
-        for j in range(w):
+    for i in range(w):
+        for j in range(h):
             if img.mode == "RGB":
                 r, g, b = img.getpixel((i,j))
                 negated.putpixel((i,j), (255-r, 255-g, 255-b))
